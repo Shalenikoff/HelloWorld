@@ -34,6 +34,9 @@
                                 <state key="normal" title="Show Greeting">
                                     <color key="titleColor" systemColor="systemBrownColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="greetingButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="qRo-aZ-qUx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,10 +49,29 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lBi-di-t5M" secondAttribute="bottom" constant="199" id="yoK-Cw-XNi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingButton" destination="lBi-di-t5M" id="awi-pz-sYP"/>
+                        <outlet property="greetingLabel" destination="EN7-xw-jsJ" id="sNW-x9-ptu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.046511627906973" y="-2.5751072961373391"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SbD-ra-icN">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKC-mO-eVZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="c8h-53-kJK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OtB-ua-3V0">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OqN-Lz-vc8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="723" y="12"/>
         </scene>
     </scenes>
     <resources>
